@@ -11,7 +11,7 @@ export type ValueSourceTypeEnum = "attribute" | "expression";
 
 export type BootstrapStyleEnum = "none" | "default" | "primary" | "success" | "info" | "inverse" | "warning" | "danger";
 
-export type WebdecimalformatterTypeEnum = "badge" | "label" | "text";
+export type WebdecimalformatterTypeEnum = "text" | "badge" | "label";
 
 export interface WebDecimalFormatterContainerProps {
     name: string;
