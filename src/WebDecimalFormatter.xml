@@ -64,10 +64,10 @@
         </propertyGroup>        
         <propertyGroup caption="Display">
             <property key="bootstrapStyle" type="enumeration" defaultValue="none">
-                <caption>WebDecimalFormatter style</caption>
-                <description>The appearance of the webdecimalformatter</description>
+                <caption>Style</caption>
+                <description>The appearance of the WebdecimalFormatter</description>
                 <enumerationValues>
-                    <enumerationValue key="none"></enumerationValue>                    
+                    <enumerationValue key="none">(none)</enumerationValue>                    
                     <enumerationValue key="default">Default</enumerationValue>
                     <enumerationValue key="primary">Primary</enumerationValue>
                     <enumerationValue key="success">Success</enumerationValue>
@@ -81,9 +81,9 @@
                 <caption>Type</caption>
                 <description>Render it as either a badge, a color label or text</description>
                 <enumerationValues>
-                    <enumerationValue key="badge">Badge</enumerationValue>
-                    <enumerationValue key="label">Label</enumerationValue>                    
                     <enumerationValue key="text">Text</enumerationValue> 
+                    <enumerationValue key="badge">Badge</enumerationValue>
+                    <enumerationValue key="label">Label</enumerationValue>
                 </enumerationValues>
             </property>
         </propertyGroup>

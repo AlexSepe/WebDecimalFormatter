@@ -1,9 +1,9 @@
 {
   "name": "webdecimalformatter",
   "widgetName": "WebDecimalFormatter",
-  "version": "1.0.0",
-  "description": "My widget description",
-  "copyright": "© TrueChange Technology BV 2022. All rights reserved.",
+  "version": "1.0.1",
+  "description": "Web Decimal Formatter - widget",
+  "copyright": "© TrueChange Technology 2022. All rights reserved.",
   "author": "AlexSepe",
   "engines": {
     "node": ">=16"
