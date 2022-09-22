@@ -1,0 +1,30 @@
+.widget-webdecimalformatter-clickable {
+    cursor: pointer;
+}
+
+.widget-webdecimalformatter {
+    display: inline-block;
+}
+
+.widget-webdecimalformatter.badge:empty {
+    display: initial;
+    /* Fix padding to stay round */
+    padding: 3px 10px;
+}
+
+.widget-webdecimalformatter.label:empty {
+    display: initial;
+    /* Fix padding to stay square */
+    padding: .2em .8em .3em;
+}
+
+.widget-webdecimalformatter.text:empty {
+    display: initial;
+    /* Fix padding to stay square */
+    /* padding: .2em .8em .3em; */
+}
+
+.widget-webdecimalformatter.badge {
+    min-width: 18px;
+    min-height: 18px;
+}
