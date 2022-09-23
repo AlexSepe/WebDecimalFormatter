@@ -10,6 +10,7 @@ export class WebDecimalFormatter extends Component<WebDecimalFormatterContainerP
 
     render(): ReactNode {
         let displayValue = 0;
+        let text = "";
         if (this.props.valueSourceType === "attribute") {
             const inputValue = this.props.input?.value;
             switch (typeof inputValue) {
@@ -23,13 +24,16 @@ export class WebDecimalFormatter extends Component<WebDecimalFormatterContainerP
         } else {
             displayValue = Number(this.props.valueExpression?.value);
         }
-        const decimalValue = money(
-            displayValue,
-            this.props.decimalSeparator.value,
-            this.props.thousandsSeparator.value,
-            this.props.decimalCount
-        );
-        const text = `${this.props.preffix}${decimalValue}${this.props.suffix}`;
+
+        if (!isNaN(displayValue)) {
+            const decimalValue = money(
+                displayValue,
+                this.props.decimalSeparator.value,
+                this.props.thousandsSeparator.value,
+                this.props.decimalCount
+            );
+            text = `${this.props.preffix}${decimalValue}${this.props.suffix}`;
+        }
 
         return (
             <BadgeWebDecimal

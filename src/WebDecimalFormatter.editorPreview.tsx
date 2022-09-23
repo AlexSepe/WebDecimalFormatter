@@ -36,7 +36,7 @@ export class preview extends Component<WebDecimalFormatterPreviewProps> {
             className: props.className,
             clickable: false,
             style: parseInlineStyle(props.style),
-            value: decimalValue
+            value: `${this.props.preffix}${decimalValue}${this.props.suffix}`
         };
     }
 }
