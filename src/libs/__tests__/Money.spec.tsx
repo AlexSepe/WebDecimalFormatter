@@ -31,6 +31,30 @@ describe("Money", () => {
         expect(result).toEqual("0,00");
     });
 
+    it("should show 0,00 NaN", () => {
+        const result = money(0.0, ",", ".", NaN);
+
+        expect(result).toEqual("0,00");
+    });
+
+    it("should show 0,00 Undefined", () => {
+        const result = money(0.0, undefined, undefined, NaN);
+
+        expect(result).toEqual("0,00");
+    });
+
+    it("should show 0 decimal < 0", () => {
+        const result = money(0.0, undefined, undefined, -1);
+
+        expect(result).toEqual("0");
+    });
+
+    it("should show 0.00 null", () => {
+        const result = money(null);
+
+        expect(result).toEqual("0,00");
+    });
+
     it("should show 1.000.00", () => {
         const result = money(1000.0, ",", ".", 2);
 
