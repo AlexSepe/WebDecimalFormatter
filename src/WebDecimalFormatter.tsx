@@ -3,7 +3,7 @@ import { Component, ReactNode, createElement } from "react";
 import { WebDecimalFormatterContainerProps } from "../typings/WebDecimalFormatterProps";
 import { BadgeWebDecimal } from "./components/BadgeWebDecimal";
 import "./ui/WebDecimalFormatter.css";
-import { money } from "./Money";
+import { money } from "./libs/Money";
 
 export class WebDecimalFormatter extends Component<WebDecimalFormatterContainerProps> {
     private readonly onClickHandler = this.onClick.bind(this);

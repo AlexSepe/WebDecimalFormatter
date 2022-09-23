@@ -4,7 +4,7 @@ import { parseInlineStyle } from "@mendix/pluggable-widgets-tools";
 
 import { BadgeWebDecimal, BadgeWebDecimalProps } from "./components/BadgeWebDecimal";
 import { WebDecimalFormatterPreviewProps } from "../typings/WebDecimalFormatterProps";
-import { money } from "./Money";
+import { money } from "./libs/Money";
 
 export class preview extends Component<WebDecimalFormatterPreviewProps> {
     render(): ReactNode {
