@@ -1,13 +1,13 @@
 import { createElement } from "react";
 import { shallow, ShallowWrapper } from "enzyme";
 
-import { BadgeSample, BadgeSampleProps } from "../BadgeSample";
+import { BadgeWebDecimal, BadgeWebDecimalProps } from "../BadgeWebDecimal";
 
 describe("Badge", () => {
-    const createBadge = (props: BadgeSampleProps): ShallowWrapper => shallow(<BadgeSample {...props} />);
+    const createBadge = (props: BadgeWebDecimalProps): ShallowWrapper => shallow(<BadgeWebDecimal {...props} />);
 
     it("should render the structure", () => {
-        const badgeProps: BadgeSampleProps = {
+        const badgeProps: BadgeWebDecimalProps = {
             type: "badge",
             bootstrapStyle: "default",
             value: "0"
@@ -43,7 +43,7 @@ describe("Badge", () => {
     });
 
     it("with a click action should respond to click events", () => {
-        const badgeProps: BadgeSampleProps = { onClickAction: jest.fn(), type: "badge" };
+        const badgeProps: BadgeWebDecimalProps = { onClickAction: jest.fn(), type: "badge" };
         const onClick = (badgeProps.onClickAction = jest.fn());
         const badge = createBadge(badgeProps);
 

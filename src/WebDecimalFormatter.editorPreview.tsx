@@ -2,7 +2,7 @@ import { Component, ReactNode, createElement } from "react";
 
 import { parseInlineStyle } from "@mendix/pluggable-widgets-tools";
 
-import { BadgeSample, BadgeSampleProps } from "./components/BadgeSample";
+import { BadgeWebDecimal, BadgeWebDecimalProps } from "./components/BadgeWebDecimal";
 import { WebDecimalFormatterPreviewProps } from "../typings/WebDecimalFormatterProps";
 import { money } from "./Money";
 
@@ -10,7 +10,7 @@ export class preview extends Component<WebDecimalFormatterPreviewProps> {
     render(): ReactNode {
         return (
             // <div ref={this.parentInline}>
-            <BadgeSample {...this.transformProps(this.props)}></BadgeSample>
+            <BadgeWebDecimal {...this.transformProps(this.props)}></BadgeWebDecimal>
             // </div>
         );
     }
@@ -22,7 +22,7 @@ export class preview extends Component<WebDecimalFormatterPreviewProps> {
     //     }
     // }
 
-    private transformProps(props: WebDecimalFormatterPreviewProps): BadgeSampleProps {
+    private transformProps(props: WebDecimalFormatterPreviewProps): BadgeWebDecimalProps {
         const decimalValue = money(
             123456.789,
             props.decimalSeparator.replaceAll("'", ""),

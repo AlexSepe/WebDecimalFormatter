@@ -1,7 +1,7 @@
 import { Component, ReactNode, CSSProperties, createElement } from "react";
 import classNames from "classnames";
 
-export interface BadgeSampleProps {
+export interface BadgeWebDecimalProps {
     type: "badge" | "label" | "text";
     className?: string;
     style?: CSSProperties;
@@ -14,7 +14,7 @@ export interface BadgeSampleProps {
 
 export type BootstrapStyle = "none" | "default" | "info" | "inverse" | "primary" | "danger" | "success" | "warning";
 
-export class BadgeSample extends Component<BadgeSampleProps> {
+export class BadgeWebDecimal extends Component<BadgeWebDecimalProps> {
     render(): ReactNode {
         return (
             <span

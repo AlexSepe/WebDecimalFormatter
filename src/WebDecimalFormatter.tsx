@@ -1,7 +1,7 @@
 import { Component, ReactNode, createElement } from "react";
 
 import { WebDecimalFormatterContainerProps } from "../typings/WebDecimalFormatterProps";
-import { BadgeSample } from "./components/BadgeSample";
+import { BadgeWebDecimal } from "./components/BadgeWebDecimal";
 import "./ui/WebDecimalFormatter.css";
 import { money } from "./Money";
 
@@ -32,7 +32,7 @@ export class WebDecimalFormatter extends Component<WebDecimalFormatterContainerP
         const text = `${this.props.preffix}${decimalValue}${this.props.suffix}`;
 
         return (
-            <BadgeSample
+            <BadgeWebDecimal
                 type={this.props.webdecimalformatterType}
                 bootstrapStyle={this.props.bootstrapStyle}
                 className={this.props.class}
@@ -40,7 +40,7 @@ export class WebDecimalFormatter extends Component<WebDecimalFormatterContainerP
                 onClickAction={this.onClickHandler}
                 style={this.props.style}
                 value={text}
-            ></BadgeSample>
+            ></BadgeWebDecimal>
         );
     }
 
